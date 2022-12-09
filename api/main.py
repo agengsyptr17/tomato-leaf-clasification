@@ -26,12 +26,9 @@ app.add_middleware(
 MODEL = tf.keras.models.load_model("E:\leaf-disease-classification\\training\\models\\tomato_1")
 
 CLASS_NAMES = ["Bacterial Spot", "Early Blight", "Healthy", "Late Blight",
-                "Leaf Mold", "Mosaic Virus", "Setporia Leaf Spot", "Spider Mites Two Spotted Spider Mite",
+                "Leaf Mold", "Mosaic Virus", "Setporia Leaf Spot", "Two Spotted Spider Mite",
                 "Target Spot", "Yellow Leaf Curl Virus"]
 
-@app.get("/ping")
-async def ping():
-    return "Hello, I am alive"
 
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
