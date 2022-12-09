@@ -214,7 +214,7 @@ export const ImageUpload = () => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            Kelompok 47: Klasifikasi Penyakit Daun Tomat
+            Tomato Leaf Disease Clasification
           </Typography>
           <div className={classes.grow} />
           <Avatar src={cblogo}></Avatar>
@@ -243,7 +243,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a potato plant leaf to process"}
+                  dropzoneText={"Drag and drop an image of a tomato plant leaf to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
